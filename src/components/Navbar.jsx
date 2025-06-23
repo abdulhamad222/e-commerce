@@ -10,7 +10,7 @@ const Navbar = () => {
   const { isSeller, router } = useAppContext();
 
   return (
-    <nav className="flex items-center justify-between bg-[#393E46] px-6 md:px-16 lg:px-32 py-3 text-white">
+    <nav className="flex items-center justify-between border-b-2 bg-[#393E46] px-6 md:px-16 lg:px-32 py-3 text-white">
       <Image
         className="cursor-pointer w-28 md:w-32"
         onClick={() => router.push('/')}

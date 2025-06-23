@@ -52,7 +52,7 @@ const AddProduct = () => {
             id="product-name"
             type="text"
             placeholder="Type here"
-            className="outline-none md:py-2.5 py-2 px-3 rounded border border-gray-500/40"
+            className="outline-none text-gray-800 md:py-2.5 py-2 px-3 rounded border-2 border-[#DFD0B8]"
             onChange={(e) => setName(e.target.value)}
             value={name}
             required
@@ -68,7 +68,7 @@ const AddProduct = () => {
           <textarea
             id="product-description"
             rows={4}
-            className="outline-none md:py-2.5 py-2 px-3 rounded border border-gray-500/40 resize-none"
+            className="outline-none text-gray-800 md:py-2.5 py-2 px-3 rounded border-2 border-[#DFD0B8] resize-none"
             placeholder="Type here"
             onChange={(e) => setDescription(e.target.value)}
             value={description}
@@ -82,7 +82,7 @@ const AddProduct = () => {
             </label>
             <select
               id="category"
-              className="outline-none md:py-2.5 py-2 px-3 rounded border border-gray-500/40"
+              className="outline-none md:py-2.5 text-gray-800 py-2 px-3 rounded border-2 border-[#DFD0B8]"
               onChange={(e) => setCategory(e.target.value)}
               defaultValue={category}
             >
@@ -103,7 +103,7 @@ const AddProduct = () => {
               id="product-price"
               type="number"
               placeholder="0"
-              className="outline-none md:py-2.5 py-2 px-3 rounded border border-gray-500/40"
+              className="outline-none text-gray-800 md:py-2.5 py-2 px-3 rounded border-2 border-[#DFD0B8]"
               onChange={(e) => setPrice(e.target.value)}
               value={price}
               required
@@ -117,14 +117,14 @@ const AddProduct = () => {
               id="offer-price"
               type="number"
               placeholder="0"
-              className="outline-none md:py-2.5 py-2 px-3 rounded border border-gray-500/40"
+              className="outline-none text-gray-800 md:py-2.5 py-2 px-3 rounded border-2 border-[#DFD0B8]"
               onChange={(e) => setOfferPrice(e.target.value)}
               value={offerPrice}
               required
             />
           </div>
         </div>
-        <button type="submit" className="px-8 py-2.5 bg-orange-600 text-white font-medium rounded">
+        <button type="submit" className="px-8 py-2.5 bg-[#DFD0B8] text-[#393E46] font-medium rounded">
           ADD
         </button>
       </form>
