@@ -7,7 +7,7 @@ const NewsLetter = () => {
       <h1 className="md:text-4xl text-2xl font-medium">
         Subscribe now & get 20% off
       </h1>
-      <p className="md:text-base text-gray-500/80 pb-8">
+      <p className="md:text-base text-[#DFD0B8] pb-8">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
       </p>
@@ -17,7 +17,7 @@ const NewsLetter = () => {
           type="text"
           placeholder="Enter your email id"
         />
-        <button className="md:px-12 px-8 h-full text-white bg-orange-600 rounded-md rounded-l-none">
+        <button className="md:px-12 px-8 h-full bg-[#DFD0B8] text-[#222831] rounded-md rounded-l-none">
           Subscribe
         </button>
       </div>
