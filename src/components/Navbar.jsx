@@ -50,7 +50,7 @@ const Navbar = () => {
         <Image className="w-4 h-4" src={assets.search_icon} alt="search icon" />
         <Button
           onPress={onOpen}
-          className="flex items-center gap-2 hover:text-gray-300 transition"
+          className="flex items-center justify-center gap-2 transition"
         >
           <Image src={assets.user_icon} alt="user icon" />
           Account
@@ -68,8 +68,8 @@ const Navbar = () => {
           </button>
         )}
         <Button
-          onPress={onOpen}
-          className="flex items-center gap-2 hover:text-gray-300 transition"
+          onclick={onOpen}
+          className="flex items-center justify-center gap-2 transition"
         >
           <Image src={assets.user_icon} alt="user icon" />
           Account
@@ -89,15 +89,15 @@ const Navbar = () => {
         <DrawerContent>
           {(onClose) => (
             <>
-              <DrawerHeader className="flex flex-col gap-1">
+              <DrawerHeader className="flex flex-col gap-1 bg-[#393E46]">
                 Account Options
               </DrawerHeader>
-              <DrawerBody className="space-y-4">
+              <DrawerBody className="space-y-4 bg-[#222831]">
                 <p>Manage your account, view orders, and update profile.</p>
                 <Button
                   fullWidth
                   onPress={() => {
-                    router.push("/account");
+                    router.push("/");
                     onClose();
                   }}
                 >
@@ -106,14 +106,14 @@ const Navbar = () => {
                 <Button
                   fullWidth
                   onPress={() => {
-                    router.push("/login");
+                    router.push("/");
                     onClose();
                   }}
                 >
                   Login
                 </Button>
               </DrawerBody>
-              <DrawerFooter>
+              <DrawerFooter className="bg-[#222831]">
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
