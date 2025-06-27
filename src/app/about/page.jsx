@@ -31,7 +31,7 @@ const About = () => {
 
         <div className="mt-12 text-center">
           <h2 className="text-2xl font-semibold mb-2">Need Help?</h2>
-          <p className="text-gray-400">Contact our support team at <a href="/contact" className="text-[#DFD0B8] underline">Contact Us</a></p>
+          <p className="text-gray-400">Contact our support team at <a href="/contact" className="text-[#DFD0B8z] underline">Contact Us</a></p>
         </div>
       </div>
     </div>
