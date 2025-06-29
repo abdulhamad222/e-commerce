@@ -1,9 +1,7 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import { AppContextProvider } from "@/context/AppContext";
 import { Toaster } from "react-hot-toast";
-import * as React from "react";
-import {HeroUIProvider} from "@heroui/react";
+import Providers from "./Providers";
 
 const outfit = Outfit({ subsets: ['latin'], weight: ["300", "400", "500"] })
 
@@ -17,11 +15,9 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body className={`${outfit.className} bg-[#393E46] antialiased text-gray-300`} >
           <Toaster />
-            <AppContextProvider>
-              <HeroUIProvider>
-                {children}
-              </HeroUIProvider>
-            </AppContextProvider>
+          <Providers>
+            {children}
+          </Providers>
         </body>
       </html>
   );
