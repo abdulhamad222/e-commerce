@@ -20,6 +20,7 @@ const Navbar = () => {
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
+  
   const { data: session } = useSession();
 
   return (

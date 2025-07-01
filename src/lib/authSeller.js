@@ -1,20 +1,19 @@
-import { clerkClient } from '@clerk/nextjs/server';
-import { NextResponse } from 'next/server';
+import dbConnection from "@/config/db";
+import User from "@/model/userModel";
 
 const authSeller = async (userId) => {
-    try {
+  try {
+    await dbConnection();
 
-        const client = await clerkClient()
-        const user = await client.users.getUser(userId)
+    const user = await User.findById(userId);
 
-        if (user.publicMetadata.role === 'seller') {
-            return true;
-        } else {
-            return false;
-        }
-    } catch (error) {
-        return NextResponse.json({ success: false, message: error.message });
-    }
-}
+    if (!user) return false;
+
+    return user.role === "seller";
+  } catch (error) {
+    console.error("authSeller error:", error.message);
+    return false;
+  }
+};
 
 export default authSeller;

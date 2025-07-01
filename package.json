@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@heroui/react": "^2.7.11",
+    "bcryptjs": "^3.0.2",
     "framer-motion": "^12.19.2",
+    "mongoose": "^8.16.1",
     "next": "^14.2.30",
     "next-auth": "^4.24.11",
     "react": "^18",
